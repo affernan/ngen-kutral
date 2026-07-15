@@ -1,35 +1,39 @@
-# Ngen Kütral
-## Open Source Framework for Chilean Wildfire Spreading
+# Ngen Kutral
 
-Source code of Master's degree thesis 
+Ngen Kutral is an open-source Python framework for wildfire spread simulation, with experiments focused on Chilean wildfire scenarios.
 
-Also includes JCC2018 experiments for submitted paper *Ngen Kütral: Toward an Open Source Framework for Chilean Wildfire Spreading* by Daniel San Martin & Claudio E. Torres
+This repository is a fork of the original project by Daniel San Martin and Claudio E. Torres. It includes the framework source code and experiment scripts associated with the work "Ngen Kutral: Toward an Open Source Framework for Chilean Wildfire Spreading".
 
-### Prerequisites
+## Repository Structure
 
-To use our framework you must install
+- `wildfire/`: Core simulation modules.
+- `experiments/`: Example simulations and experiment scripts.
+- `experiments/JCC2018/`: Scripts used for the JCC 2018 experiments.
+- `LICENSE`: Project license.
 
+## Requirements
+
+The original project was developed with:
+
+- Python 3.6.5 or later
+- NumPy 1.13.3 or later
+- SciPy 1.1.0 or later
+- Matplotlib 2.2.2 or later
+
+## Setup
+
+Clone the repository and add the package root to `PYTHONPATH`:
+
+```bash
+export PYTHONPATH="$PYTHONPATH:/path/to/ngen-kutral"
 ```
-Python >= 3.6.5
-Numpy >= 1.13.3
-Scipy >= 1.1.0
-Matplotlib >= 2.2.2
+
+## Running Experiments
+
+From the repository root, run one of the experiment scripts:
+
+```bash
+python experiments/JCC2018/asensio_2002.py
 ```
 
-### Installing
-
-Clone the repository at the directory you want
-```console
-user@host:~$ git clone https://github.com/dsanmartin/ngen-kutral.git
-
-```
-
-Add the following line to your ~/.profile, ~/.bash_profile or ~/.bashrc file according to your SO configuration.
-```
-export PYTHONPATH=$PYTHONPATH:/path/you/put/the/repository/ngen-kutral/widlfire
-```
-### Run experiments
-Execute the following command inside repository directory
-```console
-user@host:~$ python experiments/JCC2018/experiment_you_want.py
-```
+Other scripts in `experiments/` and `experiments/JCC2018/` can be used as references for configuring simulations and generating plots.
